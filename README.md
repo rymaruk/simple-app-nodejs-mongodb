@@ -1,5 +1,7 @@
 ## 🔥 Simple App / NodeJS + MongoDB
 
+![alt text](https://image.prntscr.com/image/viKRTTpaQn2gnDuT934s_g.png)
+
 * Install npm dependencies:
 
     ``> npm install``
