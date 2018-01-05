@@ -65,3 +65,9 @@
 * Run:
     
     ``http://127.0.0.1:3000``
+
+ ### List help links
+* https://docs.mongodb.com/manual/tutorial/measure-index-use/index.html
+* http://mongodb.github.io/node-mongodb-native/3.0/quick-start/quick-start/
+* https://www.youtube.com/watch?v=pWbMrx5rVBE
+* https://www.youtube.com/watch?v=Do_Hsb_Hs3c
