@@ -1,0 +1,31 @@
+extends layout
+
+block content
+
+    if event
+        strong #{event}
+
+    a(href="/", class="go_back")
+        strong #{'🔙 Go back'}
+    br
+    br
+
+    h3.
+        Add new users
+    a(href="/new_user", class="link_new_user") #{'+ Create new user'}
+
+    br
+
+    h3.
+        All users (#{users_list.length})
+    ul(class="users_list")
+        if users_list.length
+            each user, i in users_list
+                li(class="users_list_item")
+                    a(href="user/#{user._id}") #{user.first_name} #{user.last_name}
+                    form(name="remove_user", method="post", action="/remove_user")
+                        input(type="hidden", value="#{user._id}", name="id")
+                        button(type="submit", class="remove_user") ✖️
+        else
+            li
+                strong(style="color:#f7630c") #{'🔥 No users in DB!'}

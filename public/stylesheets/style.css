@@ -1,0 +1,50 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+.go_back:hover,
+.go_back,
+.link_new_user,
+.item_list_users:hover,
+.item_list_users {
+  text-decoration: none; }
+
+.go_back:hover,
+.item_list_users:hover {
+  color: #ee4141; }
+
+.users_list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.users_list_item form,
+.users_list_item a {
+  display: block;
+  float: left; }
+
+.link_new_user {
+  display: block;
+  padding: 5px 0; }
+
+.users_list_item a:hover,
+.link_new_user:hover {
+  color: #ee4141;
+  text-decoration: none; }
+
+.users_list_item {
+  height: 30px; }
+
+.users_list_item:hover .remove_user {
+  display: block; }
+
+.remove_user {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

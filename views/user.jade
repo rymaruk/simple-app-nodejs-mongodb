@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    a(href="/users", class="go_back")
+        strong #{'🔙 Go back'}
+
+    div
+        h2 #{user_data.first_name} #{user_data.last_name}
+    div
+        span #{'👌 Gender: '} #{user_data.gender}
+    div
+        span #{'📅 Age: '} #{user_data.age}
+    div
+        span #{'🏠 Address: St.'} #{user_data.address.street} #{user_data.address.city}, #{user_data.address.state}
+    div
+        span #{'💵 Balance: $'} #{user_data.balance}
+

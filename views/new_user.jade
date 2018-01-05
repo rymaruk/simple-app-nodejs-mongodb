@@ -1,0 +1,51 @@
+extends layout
+
+block content
+    a(href="/users", class="go_back")
+        strong #{'🔙 Go back'}
+
+    h3= title
+    form#form_add_user(name="add_user", method="post", action="/add_user")
+        label
+            div First name
+            input#input_name(type="text", placeholder="First name", name="first_name", required)
+        br
+        br
+        label
+            div Last name
+            input#input_name(type="text", placeholder="Last name", name="last_name", required)
+        br
+        br
+        label
+            div Street
+            input#input_street(type="text", placeholder="street", name="street", required)
+        br
+        br
+        label
+            div City
+            input#input_city(type="text", placeholder="city", name="city", required)
+        br
+        br
+        label
+            div State
+            input#input_state(type="text", placeholder="state", name="state", required)
+        br
+        br
+        label
+            div Gender
+            input#input_sex(type="text", placeholder="Gender", name="gender", required)
+        br
+        br
+        label
+            div Age
+            input#input_sex(type="number", placeholder="18", name="age", min="18", value="18", required)
+        br
+        br
+        label
+            div Start Balance
+            input#input_gpa(type="text", placeholder="balance", name="balance", value="1000", required)
+        br
+        br
+        button#submit_student(type="submit") Create
+
+
