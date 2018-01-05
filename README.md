@@ -1,4 +1,4 @@
-## Simple App / NodeJS + MongoDB
+## 🔥 Simple App / NodeJS + MongoDB
 
 * Install npm dependencies:
 
